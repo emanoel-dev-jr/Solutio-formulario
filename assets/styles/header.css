@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    padding: 20px;
+}
+
+header .part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .part h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* header .form-progress {
+    
+} */
+
+header .progress-bar {
+    background-color: #D9D9D950;
+    height: 10px;
+
+    border-radius: 12px;
+
+    margin-bottom: 10px;
+}
+
+header .progress-bar .progress {
+    background-color: var(--secondary-color);
+    width: calc(100% / 9);
+    height: 100%;
+    border-radius: 12px;
+}
