@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url(main.css);
 
 :root {
     --primary-color: #1F3A5F;
@@ -6,9 +7,14 @@
     --terciary-color: #B5502F;
 
     --background-color: #F5F2EC;
+    --selected-background-color: #FBEAE4;
     --text-color: #000000;
-    
+    --border-color: #DCD1BC;
     --suport-color: #C1443C;
+    
+
+    --white-color: #FFFFFF;
+    --dark-color: #000000;
 }
 
 * {
@@ -19,6 +25,15 @@
 
 body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     background-color: var(--background-color);
+}
+
+h1, h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.icon {
+    font-size: 20px;
 }

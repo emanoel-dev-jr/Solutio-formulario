@@ -16,7 +16,7 @@
 
     <header>
         <div class="part">
-            <span class="bi bi-arrow-left"></span>
+            <span class="bi bi-arrow-left icon"></span>
             <h1>Perfil do profissional</h1>
         </div>
         <div class="form-progress">
@@ -28,81 +28,120 @@
     </header>
 
     <main>
-        <form action="">
-            <fieldset class="area-of-experience">
+        <form action="" method="post">
+            <fieldset class="area-of-experience question">
+                <p class="question-number">Pergunta 1 de 5 desta seção</p>
                 <h2>Qual sua área de atuação principal?</h2>
-                <p>Selecione uma opção</p>
+                <p class="question-observation">Selecione uma opção</p>
                 
-                <input type="radio" name="area-of-experience" id="diarista-alternative">
-                <label for="diarista-alternative">Diarista</label>
-                
-                <input type="radio" name="area-of-experience" id="cozinheira-alternative">
-                <label for="cozinheira-alternative">Cozinheira(o)</label>
-
-                <input type="radio" name="area-of-experience" id="encanador-alternative">
-                <label for="encanador-alternative">Encanador(a)</label>
-
-                <input type="radio" name="area-of-experience" id="eletricista-alternative">
-                <label for="eletricista-alternative">Eletricista</label>
-
-                <input type="radio" name="area-of-experience" id="jardineiro-alternative">
-                <label for="jardineiro-alternative">Jardineiro(a)</label>
-
-                <input type="radio" name="area-of-experience" id="pintor-alternative">
-                <label for="pintor-alternative">Pintor(a)</label>
-
-                <input type="radio" name="area-of-experience" id="cuidador-alternative">
-                <label for="cuidador-alternative">Cuidador(a)</label>
-
-                <input type="radio" name="area-of-experience" id="outro-alternative">
-                <label for="outro-alternative">Outro</label>
+                <div class="alternatives">
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="diarista-alternative">
+                        <label for="diarista-alternative">Diarista</label>
+                    </div>
+                    
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="cozinheira-alternative">
+                        <label for="cozinheira-alternative">Cozinheira(o)</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="encanador-alternative">
+                        <label for="encanador-alternative">Encanador(a)</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="eletricista-alternative">
+                        <label for="eletricista-alternative">Eletricista</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="jardineiro-alternative">
+                        <label for="jardineiro-alternative">Jardineiro(a)</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="pintor-alternative">
+                        <label for="pintor-alternative">Pintor(a)</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="cuidador-alternative">
+                        <label for="cuidador-alternative">Cuidador(a)</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="area-of-experience" id="outro-alternative">
+                        <label for="outro-alternative">Outro</label>
+                    </div>
+                </div>
             </fieldset>
 
-            <fieldset class="years-of-experience">
+            <fieldset class="years-of-experience question">
+                <p class="question-number">Pergunta 2 de 5 desta seção</p>
                 <h2>Há quantos anos você atua nessa profissão?</h2>
-                <p>Selecione uma opção</p>
+                <p class="question-observation">Selecione uma opção</p>
 
-                <input type="radio" name="years-of-experience" id="less-than-one">
-                <label for="less-than-one">Menos de 1 ano</label>
-                
-                <input type="radio" name="years-of-experience" id="one-to-two">
-                <label for="one-to-two">1 a 3 anos</label>
-                
-                <input type="radio" name="years-of-experience" id="">
-                <label for="four-to-ten">4 a 10 anos</label>
-                
-                <input type="radio" name="years-of-experience" id="">
-                <label for="more-than-ten">Mais de 10 anos</label>
+                <div class="alternatives">
+                    <div class="alternative">
+                        <input type="radio" name="years-of-experience" id="less-than-one">
+                        <label for="less-than-one">Menos de 1 ano</label>
+                    </div>
+                    
+                    <div class="alternative">
+                        <input type="radio" name="years-of-experience" id="one-to-two">
+                        <label for="one-to-two">1 a 3 anos</label>
+                    </div>
+                    
+                    <div class="alternative">
+                        <input type="radio" name="years-of-experience" id="four-to-ten">
+                        <label for="four-to-ten">4 a 10 anos</label>
+                    </div>
+                    
+                    <div class="alternative">
+                        <input type="radio" name="years-of-experience" id="more-than-ten">
+                        <label for="more-than-ten">Mais de 10 anos</label>
+                    </div>
+                </div>
             </fieldset>
 
-            <fieldset class="main-source">
+            <fieldset class="main-source question">
+                <p class="question-number">Pergunta 3 de 5 desta seção</p>
                 <h2>Você exerce essa atividade como principal fonte de renda ou como complemento?</h2>
-                <p>Selecione uma opção</p>
+                <p class="question-observation">Selecione uma opção</p>
 
-                <input type="radio" name="main-source" id="main">
-                <label for="main">Principal</label>
-                
-                <input type="radio" name="main-source" id="complementary">
-                <label for="complementary">Complementar</label>
+                <div class="alternatives">
+                    <div class="alternative">
+                        <input type="radio" name="main-source" id="main">
+                        <label for="main">Principal</label>
+                    </div>
+                    
+                    <div class="alternative">
+                        <input type="radio" name="main-source" id="complementary">
+                        <label for="complementary">Complementar</label>
+                    </div>
+                </div>
             </fieldset>
 
-            <fieldset class="number-of-workers">
+            <fieldset class="number-of-workers question">
+                <p class="question-number">Pergunta 4 de 5 desta seção</p>
                 <h2>Você trabalha sozinho(a) ou com equipe/parceiros?</h2>
-                <p>Selecione uma opção</p>
+                <p class="question-observation">Selecione uma opção</p>
 
-                <input type="radio" name="number-of-workers" id="alone">
-                <label for="alone">Sozinho(a)</label>
-
-                <input type="radio" name="number-of-workers" id="with-a-team">
-                <label for="with-a-team">Com equipe fixa</label>
-
-                <input type="radio" name="number-of-workers" id="with-casual-partners">
-                <label for="with-casual-partners">Com parceiros eventuais</label>
+                <div class="alternatives">
+                    <div class="alternative">
+                        <input type="radio" name="number-of-workers" id="alone">
+                        <label for="alone">Sozinho(a)</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="number-of-workers" id="with-a-team">
+                        <label for="with-a-team">Com equipe fixa</label>
+                    </div>
+                    <div class="alternative">
+                        <input type="radio" name="number-of-workers" id="with-casual-partners">
+                        <label for="with-casual-partners">Com parceiros eventuais</label>
+                    </div>
+                </div>
             </fieldset>
 
-            <fieldset class="number-of-regions">
+            <fieldset class="number-of-regions question">
+                <p class="question-number">Pergunta 5 de 5 desta seção</p>
                 <h2>Quantos bairros ou regiões diferentes você costuma atender?</h2>
-                <p>Informe a quantidade</p>
+                <p class="question-observation">Informe a quantidade</p>
 
                 <div class="numeric-input">
                     <input type="number" name="number-of-regions" id="number-of-regions">

@@ -17,7 +17,7 @@ header .part {
 
 header .part h1 {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 /* header .form-progress {
