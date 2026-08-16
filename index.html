@@ -33,7 +33,7 @@
     </header>
 
     <main>
-      <form action="" method="post">
+      <form action="" method="get">
         <div class="first-part">
           <fieldset class="area-of-experience question">
             <p class="question-number">Pergunta 1 de 5 desta seção</p>
@@ -46,6 +46,8 @@
                   type="radio"
                   name="area-of-experience"
                   id="diarista-alternative"
+                  value="diarista"
+                  required
                 />
                 <div class="fake-radio"></div>
                 <label for="diarista-alternative">Diarista</label>
@@ -56,6 +58,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="cozinheira-alternative"
+                  value="cozinheira"
                 />
                 <div class="fake-radio"></div>
                 <label for="cozinheira-alternative">Cozinheira(o)</label>
@@ -65,6 +68,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="encanador-alternative"
+                  value="encanador"
                 />
                 <div class="fake-radio"></div>
                 <label for="encanador-alternative">Encanador(a)</label>
@@ -74,6 +78,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="eletricista-alternative"
+                  value="eletricista"
                 />
                 <div class="fake-radio"></div>
                 <label for="eletricista-alternative">Eletricista</label>
@@ -83,6 +88,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="jardineiro-alternative"
+                  value="jardineiro"
                 />
                 <div class="fake-radio"></div>
                 <label for="jardineiro-alternative">Jardineiro(a)</label>
@@ -92,6 +98,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="pintor-alternative"
+                  value="pintor"
                 />
                 <div class="fake-radio"></div>
                 <label for="pintor-alternative">Pintor(a)</label>
@@ -101,6 +108,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="cuidador-alternative"
+                  value="cuidador"
                 />
                 <div class="fake-radio"></div>
                 <label for="cuidador-alternative">Cuidador(a)</label>
@@ -110,6 +118,7 @@
                   type="radio"
                   name="area-of-experience"
                   id="outro-alternative"
+                  value="outro"
                 />
                 <div class="fake-radio"></div>
                 <label for="outro-alternative">Outro</label>
@@ -126,6 +135,8 @@
                   type="radio"
                   name="years-of-experience"
                   id="less-than-one"
+                  value="mais-de-1-ano"
+                  required
                 />
                 <div class="fake-radio"></div>
                 <label for="less-than-one">Menos de 1 ano</label>
@@ -136,6 +147,7 @@
                   type="radio"
                   name="years-of-experience"
                   id="one-to-two"
+                  value="de-1-a-3-anos"
                 />
                 <div class="fake-radio"></div>
                 <label for="one-to-two">1 a 3 anos</label>
@@ -146,6 +158,7 @@
                   type="radio"
                   name="years-of-experience"
                   id="four-to-ten"
+                  value="de-4-a-10-anos"
                 />
                 <div class="fake-radio"></div>
                 <label for="four-to-ten">4 a 10 anos</label>
@@ -156,13 +169,14 @@
                   type="radio"
                   name="years-of-experience"
                   id="more-than-ten"
+                  value="mais-de-10-anos"
                 />
                 <div class="fake-radio"></div>
                 <label for="more-than-ten">Mais de 10 anos</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="main-source question">
+          <fieldset class="source question">
             <p class="question-number">Pergunta 3 de 5 desta seção</p>
             <h2>
               Você exerce essa atividade como principal fonte de renda ou como
@@ -171,13 +185,24 @@
             <p class="question-observation">Selecione uma opção</p>
             <div class="alternatives">
               <div class="alternative">
-                <input type="radio" name="main-source" id="main" />
+                <input
+                  type="radio"
+                  name="source"
+                  id="main"
+                  value="principal"
+                  required
+                />
                 <div class="fake-radio"></div>
                 <label for="main">Principal</label>
               </div>
 
               <div class="alternative">
-                <input type="radio" name="main-source" id="complementary" />
+                <input
+                  type="radio"
+                  name="source"
+                  id="complementary"
+                  value="complementar"
+                />
                 <div class="fake-radio"></div>
                 <label for="complementary">Complementar</label>
               </div>
@@ -189,12 +214,23 @@
             <p class="question-observation">Selecione uma opção</p>
             <div class="alternatives">
               <div class="alternative">
-                <input type="radio" name="number-of-workers" id="alone" />
+                <input
+                  type="radio"
+                  name="number-of-workers"
+                  id="alone"
+                  value="sozinho"
+                  required
+                />
                 <div class="fake-radio"></div>
                 <label for="alone">Sozinho(a)</label>
               </div>
               <div class="alternative">
-                <input type="radio" name="number-of-workers" id="with-a-team" />
+                <input
+                  type="radio"
+                  name="number-of-workers"
+                  id="with-a-team"
+                  value="com-equipe-fixa"
+                />
                 <div class="fake-radio"></div>
                 <label for="with-a-team">Com equipe fixa</label>
               </div>
@@ -203,6 +239,7 @@
                   type="radio"
                   name="number-of-workers"
                   id="with-casual-partners"
+                  value="com-parceiros-eventuais"
                 />
                 <div class="fake-radio"></div>
                 <label for="with-casual-partners"
@@ -220,20 +257,269 @@
                 type="number"
                 name="number-of-regions"
                 id="number-of-regions"
-                placeholder="0"
+                placeholder="1"
                 min="1"
                 max="99"
+                required
               />
               <input type="button" value="+" />
               <input type="button" value="-" />
             </div>
           </fieldset>
-
         </div>
 
-        <hr>
+        <div class="second-part">
+          <fieldset class="question">
+            <p class="question-number">Pergunta 1 de 6 desta seção</p>
+            <h2>Como você normalmente consegue novos clientes hoje?</h2>
+            <p class="question-observation">
+              Selecione todas as opções que se aplicam
+            </p>
 
-        <input type="button" value="Continuar" class="continue-button">
+            <div class="alternatives">
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="indication"
+                  value="indicacao"
+                  required
+                />
+                <div class="fake-checkbox"></div>
+                <label for="indication">Indicação de conhecidos</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="social-midias"
+                  value="redes-sociais"
+                />
+                <div class="fake-checkbox"></div>
+                <label for="social-midias">Redes sociais</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="service-apps"
+                  value="aplicativos-de-serviço"
+                />
+                <div class="fake-checkbox"></div>
+                <label for="service-apps">Aplicativos de serviço</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="flyers-and-cards"
+                  value="panfletos-e-cartoes"
+                />
+                <div class="fake-checkbox"></div>
+                <label for="flyers-and-cards">Panfletos e cartões</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="whatsapp-groups"
+                  value="grupos-de-whatsapp"
+                />
+                <div class="fake-checkbox"></div>
+                <label for="whatsapp-groups">Grupos de WhatsApp</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="paid-ads"
+                  value="anuncios-pagos"
+                />
+                <div class="fake-checkbox"></div>
+                <label for="paid-ads">Anúncios pagos</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="checkbox"
+                  name="how-he-get-clients"
+                  id="other"
+                  value="outro"
+                />
+                <div class="fake-checkbox"></div>
+                <label for="other">Outro</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="question">
+            <p class="question-number">Pergunta 2 de 6 desta seção</p>
+            <h2>
+              O quanto você considera difícil encontrar novos clientes
+              atualmente?
+            </h2>
+            <p class="question-observation">
+              1 → muito fácil ... 5 → muito difícil
+            </p>
+
+            <div class="likert-scale">
+              <hr />
+              <div class="scale-number">
+                <input
+                  type="radio"
+                  name="difficulty-finding-clients"
+                  id="dfc-1"
+                  value="1"
+                  required
+                /><label for="dfc-1">1</label>
+              </div>
+              <div class="scale-number">
+                <input
+                  type="radio"
+                  name="difficulty-finding-clients"
+                  id="dfc-2"
+                  value="2"
+                /><label for="dfc-2">2</label>
+              </div>
+              <div class="scale-number">
+                <input
+                  type="radio"
+                  name="difficulty-finding-clients"
+                  id="dfc-3"
+                  value="3"
+                /><label for="dfc-3">3</label>
+              </div>
+              <div class="scale-number">
+                <input
+                  type="radio"
+                  name="difficulty-finding-clients"
+                  id="dfc-4"
+                  value="4"
+                /><label for="dfc-4">4</label>
+              </div>
+              <div class="scale-number">
+                <input
+                  type="radio"
+                  name="difficulty-finding-clients"
+                  id="dfc-5"
+                  value="5"
+                /><label for="dfc-5">5</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="question">
+            <p class="question-number">Pergunta 3 de 6 desta seção</p>
+            <h2>
+              Já teve problemas com clientes que não pagaram pelo serviço
+              prestado?
+            </h2>
+            <p class="question-observation">Selecione uma opção</p>
+
+            <div class="alternatives">
+              <div class="alternative">
+                <input
+                  type="radio"
+                  name="clients-dont-pay"
+                  id="cdp-several-times"
+                  value="varias-vezes"
+                  required
+                />
+                <div class="fake-radio"></div>
+                <label for="cdp-several-times">Sim, várias vezes</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="radio"
+                  name="clients-dont-pay"
+                  id="cdp-sometimes"
+                  value="algumas-vezes"
+                />
+                <div class="fake-radio"></div>
+                <label for="cdp-sometimes">Sim, algumas vezes</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="radio"
+                  name="clients-dont-pay"
+                  id="cdp-never"
+                  value="nunca"
+                />
+                <div class="fake-radio"></div>
+                <label for="cdp-never">Nunca</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="question">
+            <p class="question-number">Pergunta 4 de 6 desta seção</p>
+            <h2>
+              Já se sentiu inseguro(a) ou desrespeitado(a) ao atender um cliente
+              novo (por não conhecer o local ou a pessoa)?
+            </h2>
+            <p class="question-observation">Selecione uma opção</p>
+
+            <div class="alternatives">
+              <div class="alternative">
+                <input
+                  type="radio"
+                  name="disrespected"
+                  id="d-yes"
+                  value="sim"
+                  required
+                />
+                <div class="fake-radio"></div>
+                <label for="d-yes">Sim</label>
+              </div>
+              <div class="alternative">
+                <input type="radio" name="disrespected" id="d-no" value="nao" />
+                <div class="fake-radio"></div>
+                <label for="d-no">Não</label>
+              </div>
+              <div class="alternative">
+                <input
+                  type="radio"
+                  name="disrespected"
+                  id="d-sometimes"
+                  value="as-vezes"
+                />
+                <div class="fake-radio"></div>
+                <label for="d-sometimes">Às vezes</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="question">
+            <p class="question-number">Pergunta 5 de 6 desta seção</p>
+            <h2>
+              Descreva a situação mais difícil que já viveu com um cliente
+              (cancelamento, calote, maus-tratos, cobrança injusta etc.).
+            </h2>
+            <p class="question-observation">Escreva no campo de texto</p>
+
+            <textarea
+              name="most-difficult-situation"
+              class="text-field"
+              id="mds-text"
+              placeholder="Esqueva aqui..."
+              required
+            ></textarea>
+          </fieldset>
+          <fieldset class="question">
+            <p class="question-number">Pergunta 6 de 6 desta seção</p>
+            <h2>
+              Como você costuma resolver conflitos com clientes hoje (ex.: cancelamento de última hora, reclamações)?
+            </h2>
+            <p class="question-observation">Escreva no campo de texto</p>
+
+            <textarea
+              name="how-he-resolves-conflicts"
+              class="text-field"
+              id="hhrc-text"
+              placeholder="Esqueva aqui..."
+              required
+            ></textarea>
+          </fieldset>
+        </div>
+
+        <hr />
+
+        <input type="button" value="Continuar" class="continue-button" />
       </form>
     </main>
   </body>

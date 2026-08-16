@@ -9,6 +9,7 @@
     --background-color: #F5F2EC;
     --selected-background-color: #FBEAE4;
     --text-color: #000000;
+    --selected-text-color: #7A3018;
     --border-color: #DCD1BC;
     
     --suport-color: #C1443C;
@@ -19,13 +20,13 @@
 }
 
 * {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-weight: 400;
     background-color: var(--background-color);
 }
@@ -35,7 +36,8 @@ h1, h2 {
     font-weight: 500;
 }
 
-input {
+input, textarea {
+    font-size: 16px;
     outline: none;
 }
 
