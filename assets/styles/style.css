@@ -11,7 +11,7 @@
     --text-color: #000000;
     --selected-text-color: #7A3018;
     --border-color: #DCD1BC;
-    
+
     --suport-color: #C1443C;
     --separation-color: #E4DFD3;
 
@@ -31,12 +31,14 @@ body {
     background-color: var(--background-color);
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 20px;
     font-weight: 500;
 }
 
-input, textarea {
+input,
+textarea {
     font-size: 16px;
     outline: none;
 }
