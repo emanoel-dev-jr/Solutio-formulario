@@ -10,8 +10,9 @@
     --selected-background-color: #FBEAE4;
     --text-color: #000000;
     --border-color: #DCD1BC;
-    --suport-color: #C1443C;
     
+    --suport-color: #C1443C;
+    --separation-color: #E4DFD3;
 
     --white-color: #FFFFFF;
     --dark-color: #000000;
@@ -32,6 +33,16 @@ body {
 h1, h2 {
     font-size: 20px;
     font-weight: 500;
+}
+
+input {
+    outline: none;
+}
+
+hr {
+    background-color: var(--separation-color);
+    height: 1px;
+    border: none;
 }
 
 .icon {
