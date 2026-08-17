@@ -7,9 +7,12 @@
     --terciary-color: #B5502F;
 
     --background-color: #F5F2EC;
+    --hover-background-color: hsl(16, 30%, 94%);
     --selected-background-color: #FBEAE4;
+
     --text-color: #000000;
     --selected-text-color: #7A3018;
+    
     --border-color: #DCD1BC;
 
     --suport-color: #C1443C;
@@ -24,6 +27,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
 body {
@@ -40,15 +44,16 @@ h2 {
 input,
 textarea {
     font-size: 16px;
-    outline: none;
+}
+
+
+button,
+label {
+    user-select: none;
 }
 
 hr {
     background-color: var(--separation-color);
     height: 1px;
     border: none;
-}
-
-.icon {
-    font-size: 20px;
 }

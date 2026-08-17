@@ -1,1789 +1,1145 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário Solutio</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <!-- Bilbioteca de icones Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <!-- Inter Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="part">
-        <span class="bi bi-arrow-left icon"></span>
-        <h1>Perfil do profissional</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário Solutio</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <!-- Bilbioteca de icones Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="part">
+      <span class="bi bi-arrow-left icon"></span>
+      <h1>Perfil do profissional</h1>
+    </div>
+    <div class="form-progress">
+      <div class="progress-bar">
+        <div class="progress"></div>
       </div>
-      <div class="form-progress">
-        <div class="progress-bar">
-          <div class="progress"></div>
+      <span>Parte 1 de 9</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="navigation-part">
+      <a href="#landing-page" class="bi bi-arrow-left icon"></a>
+      <h1>
+        <span>Diagnóstico de trabalho</span>
+      </h1>
+
+      <ul>
+        <li><button>1. Perfil do profissional</button></li>
+        <li><button class="selected-part">2. Captação de clientes</button></li>
+        <li><button>3. Preços e pagamentos</button></li>
+        <li><button>4. Ferramentas</button></li>
+        <li><button>5. Segurança</button></li>
+        <li><button>6. Formalização</button></li>
+        <li><button>7. Uso de Aplicativos</button></li>
+        <li><button>8. Capacitação</button></li>
+        <li><button>9. Percepção geral</button></li>
+      </ul>
+    </div>
+
+    <form action="" method="post">
+      <fieldset class="part-1 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 5 desta seção</p>
+          <h2>Qual sua área de atuação principal?</h2>
+          <p class="question-observation">Selecione uma opção</p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-diarista" value="diarista" required />
+              <div class="fake-radio"></div>
+              <label for="adt-diarista">Diarista</label>
+            </div>
+
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-cozinheira" value="cozinheira" />
+              <div class="fake-radio"></div>
+              <label for="adt-cozinheira">Cozinheira(o)</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-encanador" value="encanador" />
+              <div class="fake-radio"></div>
+              <label for="adt-encanador">Encanador(a)</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-eletricista" value="eletricista" />
+              <div class="fake-radio"></div>
+              <label for="adt-eletricista">Eletricista</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-jardineiro" value="jardineiro" />
+              <div class="fake-radio"></div>
+              <label for="adt-jardineiro">Jardineiro(a)</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-pintor" value="pintor" />
+              <div class="fake-radio"></div>
+              <label for="adt-pintor">Pintor(a)</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-cuidador" value="cuidador" />
+              <div class="fake-radio"></div>
+              <label for="adt-cuidador">Cuidador(a)</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="area-de-atuacao" id="adt-outro" value="outro" />
+              <div class="fake-radio"></div>
+              <label for="adt-outro">Outro</label>
+            </div>
+          </div>
         </div>
-        <span>Parte 1 de 9</span>
-      </div>
-    </header>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 5 desta seção</p>
+          <h2>Há quantos anos você atua nessa profissão?</h2>
+          <p class="question-observation">Selecione uma opção</p>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="tempo-de-esperiencia" id="tde-menos-de-um-ano" value="menos-de-um-ano"
+                required />
+              <div class="fake-radio"></div>
+              <label for="tde-menos-de-um-ano">Menos de 1 ano</label>
+            </div>
 
-    <main>
-      <form action="" method="get">
-        <fieldset class="part-1">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 5 desta seção</p>
-            <h2>Qual sua área de atuação principal?</h2>
-            <p class="question-observation">Selecione uma opção</p>
+            <div class="alternative">
+              <input type="radio" name="tempo-de-esperiencia" id="tde-um-a-tres-anos" value="de-1-a-3-anos" />
+              <div class="fake-radio"></div>
+              <label for="tde-um-a-tres-anos">1 a 3 anos</label>
+            </div>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-diarista"
-                  value="diarista"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-diarista">Diarista</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="tempo-de-esperiencia" id="tde-quatro-a-dez-anos" value="de-4-a-10-anos" />
+              <div class="fake-radio"></div>
+              <label for="tde-quatro-a-dez-anos">4 a 10 anos</label>
+            </div>
 
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-cozinheira"
-                  value="cozinheira"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-cozinheira">Cozinheira(o)</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-encanador"
-                  value="encanador"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-encanador">Encanador(a)</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-eletricista"
-                  value="eletricista"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-eletricista">Eletricista</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-jardineiro"
-                  value="jardineiro"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-jardineiro">Jardineiro(a)</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-pintor"
-                  value="pintor"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-pintor">Pintor(a)</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-cuidador"
-                  value="cuidador"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-cuidador">Cuidador(a)</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="area-de-atuacao"
-                  id="adt-outro"
-                  value="outro"
-                />
-                <div class="fake-radio"></div>
-                <label for="adt-outro">Outro</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="tempo-de-esperiencia" id="tde-mais-de-dez-anos" value="mais-de-10-anos" />
+              <div class="fake-radio"></div>
+              <label for="tde-mais-de-dez-anos">Mais de 10 anos</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 5 desta seção</p>
-            <h2>Há quantos anos você atua nessa profissão?</h2>
-            <p class="question-observation">Selecione uma opção</p>
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-de-esperiencia"
-                  id="tde-menos-de-um-ano"
-                  value="menos-de-um-ano"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="tde-menos-de-um-ano">Menos de 1 ano</label>
-              </div>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 5 desta seção</p>
+          <h2>
+            Você exerce essa atividade como principal fonte de renda ou como
+            complemento?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="tipo-de-fonte" id="tdf-principal" value="principal" required />
+              <div class="fake-radio"></div>
+              <label for="tdf-principal">Principal</label>
+            </div>
 
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-de-esperiencia"
-                  id="tde-um-a-tres-anos"
-                  value="de-1-a-3-anos"
-                />
-                <div class="fake-radio"></div>
-                <label for="tde-um-a-tres-anos">1 a 3 anos</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-de-esperiencia"
-                  id="tde-quatro-a-dez-anos"
-                  value="de-4-a-10-anos"
-                />
-                <div class="fake-radio"></div>
-                <label for="tde-quatro-a-dez-anos">4 a 10 anos</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-de-esperiencia"
-                  id="tde-mais-de-dez-anos"
-                  value="mais-de-10-anos"
-                />
-                <div class="fake-radio"></div>
-                <label for="tde-mais-de-dez-anos">Mais de 10 anos</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="tipo-de-fonte" id="tdf-complementar" value="complementar" />
+              <div class="fake-radio"></div>
+              <label for="tdf-complementar">Complementar</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 5 desta seção</p>
-            <h2>
-              Você exerce essa atividade como principal fonte de renda ou como
-              complemento?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tipo-de-fonte"
-                  id="tdf-principal"
-                  value="principal"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="tdf-principal">Principal</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tipo-de-fonte"
-                  id="tdf-complementar"
-                  value="complementar"
-                />
-                <div class="fake-radio"></div>
-                <label for="tdf-complementar">Complementar</label>
-              </div>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 5 desta seção</p>
+          <h2>Você trabalha sozinho(a) ou com equipe/parceiros?</h2>
+          <p class="question-observation">Selecione uma opção</p>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="numero-de-trabalhadores" id="ndt-sozinho" value="sozinho" required />
+              <div class="fake-radio"></div>
+              <label for="ndt-sozinho">Sozinho(a)</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="numero-de-trabalhadores" id="ndt-com-equipe-fixa" value="com-equipe-fixa" />
+              <div class="fake-radio"></div>
+              <label for="ndt-com-equipe-fixa">Com equipe fixa</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="numero-de-trabalhadores" id="ndt-com-parceiros-eventuais"
+                value="com-parceiros-eventuais" />
+              <div class="fake-radio"></div>
+              <label for="ndt-com-parceiros-eventuais">Com parceiros eventuais</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 5 desta seção</p>
-            <h2>Você trabalha sozinho(a) ou com equipe/parceiros?</h2>
-            <p class="question-observation">Selecione uma opção</p>
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="numero-de-trabalhadores"
-                  id="ndt-sozinho"
-                  value="sozinho"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="ndt-sozinho">Sozinho(a)</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="numero-de-trabalhadores"
-                  id="ndt-com-equipe-fixa"
-                  value="com-equipe-fixa"
-                />
-                <div class="fake-radio"></div>
-                <label for="ndt-com-equipe-fixa">Com equipe fixa</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="numero-de-trabalhadores"
-                  id="ndt-com-parceiros-eventuais"
-                  value="com-parceiros-eventuais"
-                />
-                <div class="fake-radio"></div>
-                <label for="ndt-com-parceiros-eventuais"
-                  >Com parceiros eventuais</label
-                >
-              </div>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 5 de 5 desta seção</p>
+          <h2>Quantos bairros ou regiões diferentes você costuma atender?</h2>
+          <p class="question-observation">Informe a quantidade</p>
+          <div class="numeric-input">
+            <input type="number" name="numero-de-regioes" id="ndr-numero" placeholder="1" min="1" max="99" required />
+            <input type="button" value="+" />
+            <input type="button" value="-" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="part-2">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 6 desta seção</p>
+          <h2>Como você normalmente consegue novos clientes hoje?</h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-indicacao" value="indicacao" required />
+              <div class="fake-checkbox"></div>
+              <label for="indicacao">Indicação de conhecidos</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-redes-sociais" value="redes-sociais" />
+              <div class="fake-checkbox"></div>
+              <label for="ccc-redes-sociais">Redes sociais</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-aplicativos-de-serviço"
+                value="aplicativos-de-serviço" />
+              <div class="fake-checkbox"></div>
+              <label for="ccc-aplicativos-de-serviço">Aplicativos de serviço</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-panfletos-e-cartoes"
+                value="panfletos-e-cartoes" />
+              <div class="fake-checkbox"></div>
+              <label for="ccc-panfletos-e-cartoes">Panfletos e cartões</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-grupos-de-whatsapp"
+                value="grupos-de-whatsapp" />
+              <div class="fake-checkbox"></div>
+              <label for="ccc-grupos-de-whatsapp">Grupos de WhatsApp</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-anuncios-pagos" value="anuncios-pagos" />
+              <div class="fake-checkbox"></div>
+              <label for="ccc-anuncios-pagos">Anúncios pagos</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-consegue-clientes" id="ccc-outro" value="outro" />
+              <div class="fake-checkbox"></div>
+              <label for="ccc-outro">Outro</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 5 de 5 desta seção</p>
-            <h2>Quantos bairros ou regiões diferentes você costuma atender?</h2>
-            <p class="question-observation">Informe a quantidade</p>
-            <div class="numeric-input">
-              <input
-                type="number"
-                name="numero-de-regioes"
-                id="ndr-numero"
-                placeholder="1"
-                min="1"
-                max="99"
-                required
-              />
-              <input type="button" value="+" />
-              <input type="button" value="-" />
+        </div>
+
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 6 desta seção</p>
+          <h2>
+            O quanto você considera difícil encontrar novos clientes
+            atualmente?
+          </h2>
+          <p class="question-observation">
+            1 → muito fácil ... 5 → muito difícil
+          </p>
+
+          <div class="likert-scale">
+            <hr />
+
+            <div class="scale-number">
+              <input type="radio" name="dificultade-em-achar-clientes" id="deac-1" value="1" required /><label
+                for="deac-1">1</label>
+            </div>
+
+            <div class="scale-number">
+              <input type="radio" name="dificultade-em-achar-clientes" id="deac-2" value="2" /><label
+                for="deac-2">2</label>
+            </div>
+
+            <div class="scale-number">
+              <input type="radio" name="dificultade-em-achar-clientes" id="deac-3" value="3" /><label
+                for="deac-3">3</label>
+            </div>
+
+            <div class="scale-number">
+              <input type="radio" name="dificultade-em-achar-clientes" id="deac-4" value="4" /><label
+                for="deac-4">4</label>
+            </div>
+
+            <div class="scale-number">
+              <input type="radio" name="dificultade-em-achar-clientes" id="deac-5" value="5" /><label
+                for="deac-5">5</label>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="part-2">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 6 desta seção</p>
-            <h2>Como você normalmente consegue novos clientes hoje?</h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 6 desta seção</p>
+          <h2>
+            Já teve problemas com clientes que não pagaram pelo serviço
+            prestado?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-indicacao"
-                  value="indicacao"
-                  required
-                />
-                <div class="fake-checkbox"></div>
-                <label for="indicacao">Indicação de conhecidos</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="cliente-nao-pagou" id="cnp-varias-vezes" value="varias-vezes" required />
+              <div class="fake-radio"></div>
+              <label for="cnp-varias-vezes">Sim, várias vezes</label>
+            </div>
 
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-redes-sociais"
-                  value="redes-sociais"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="ccc-redes-sociais">Redes sociais</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="cliente-nao-pagou" id="cnp-algumas-vezes" value="algumas-vezes" />
+              <div class="fake-radio"></div>
+              <label for="cnp-algumas-vezes">Sim, algumas vezes</label>
+            </div>
 
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-aplicativos-de-serviço"
-                  value="aplicativos-de-serviço"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="ccc-aplicativos-de-serviço">Aplicativos de serviço</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-panfletos-e-cartoes"
-                  value="panfletos-e-cartoes"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="ccc-panfletos-e-cartoes">Panfletos e cartões</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-grupos-de-whatsapp"
-                  value="grupos-de-whatsapp"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="ccc-grupos-de-whatsapp">Grupos de WhatsApp</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-anuncios-pagos"
-                  value="anuncios-pagos"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="ccc-anuncios-pagos">Anúncios pagos</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-consegue-clientes"
-                  id="ccc-outro"
-                  value="outro"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="ccc-outro">Outro</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="cliente-nao-pagou" id="cnp-nunca" value="nunca" />
+              <div class="fake-radio"></div>
+              <label for="cnp-nunca">Nunca</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 6 desta seção</p>
-            <h2>
-              O quanto você considera difícil encontrar novos clientes
-              atualmente?
-            </h2>
-            <p class="question-observation">
-              1 → muito fácil ... 5 → muito difícil
-            </p>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 6 desta seção</p>
+          <h2>
+            Já se sentiu inseguro(a) ou desrespeitado(a) ao atender um cliente
+            novo (por não conhecer o local ou a pessoa)?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="likert-scale">
-              <hr />
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="se-sentiu-desrespeitado" id="ssd-sim" value="sim" required />
+              <div class="fake-radio"></div>
+              <label for="ssd-sim">Sim</label>
+            </div>
 
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="dificultade-em-achar-clientes"
-                  id="deac-1"
-                  value="1"
-                  required
-                /><label for="deac-1">1</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="se-sentiu-desrespeitado" id="ssd-nao" value="nao" />
+              <div class="fake-radio"></div>
+              <label for="ssd-nao">Não</label>
+            </div>
 
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="dificultade-em-achar-clientes"
-                  id="deac-2"
-                  value="2"
-                /><label for="deac-2">2</label>
-              </div>
-
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="dificultade-em-achar-clientes"
-                  id="deac-3"
-                  value="3"
-                /><label for="deac-3">3</label>
-              </div>
-
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="dificultade-em-achar-clientes"
-                  id="deac-4"
-                  value="4"
-                /><label for="deac-4">4</label>
-              </div>
-
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="dificultade-em-achar-clientes"
-                  id="deac-5"
-                  value="5"
-                /><label for="deac-5">5</label>
-              </div>
+            <div class="alternative">
+              <input type="radio" name="se-sentiu-desrespeitado" id="ssd-as-vezes" value="as-vezes" />
+              <div class="fake-radio"></div>
+              <label for="ssd-as-vezes">Às vezes</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 6 desta seção</p>
-            <h2>
-              Já teve problemas com clientes que não pagaram pelo serviço
-              prestado?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 5 de 6 desta seção</p>
+          <h2>
+            Descreva a situação mais difícil que já viveu com um cliente
+            (cancelamento, calote, maus-tratos, cobrança injusta etc.).
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="cliente-nao-pagou"
-                  id="cnp-varias-vezes"
-                  value="varias-vezes"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="cnp-varias-vezes">Sim, várias vezes</label>
-              </div>
+          <textarea name="situacoes-mais-dificeis" class="text-field" placeholder="Esqueva aqui..." required></textarea>
+        </div>
 
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="cliente-nao-pagou"
-                  id="cnp-algumas-vezes"
-                  value="algumas-vezes"
-                />
-                <div class="fake-radio"></div>
-                <label for="cnp-algumas-vezes">Sim, algumas vezes</label>
-              </div>
+        <div class="question">
+          <p class="question-number">Pergunta 6 de 6 desta seção</p>
+          <h2>
+            Como você costuma resolver conflitos com clientes hoje (ex.:
+            cancelamento de última hora, reclamações)?
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="cliente-nao-pagou"
-                  id="cnp-nunca"
-                  value="nunca"
-                />
-                <div class="fake-radio"></div>
-                <label for="cnp-nunca">Nunca</label>
-              </div>
+          <textarea name="como-resolve-conflitos" class="text-field" placeholder="Esqueva aqui..." required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="part-3 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 6 desta seção</p>
+          <h2>Como você define o valor que cobra pelo seu serviço?</h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="checkbox" name="como-define-valor" id="cdv-preco-de-tabela-propria"
+                value="preco-de-tabela-propria" required />
+              <div class="fake-checkbox"></div>
+              <label for="cdv-preco-de-tabela-propria">Preço de tabela próprio</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-define-valor" id="cdv-combino-com-cliente-na-hora"
+                value="combino-com-cliente-na-hora" />
+              <div class="fake-checkbox"></div>
+              <label for="cdv-combino-com-cliente-na-hora">Combino com o cliente na hora</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-define-valor" id="cdv-sigo-referencia-da-região"
+                value="sigo-referencia-da-regiao" />
+              <div class="fake-checkbox"></div>
+              <label for="cdv-sigo-referencia-da-região">Sigo valores de referência da região</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-define-valor" id="cdv-pesquiso-concorrencia"
+                value="pesquiso-concorrencia" />
+              <div class="fake-checkbox"></div>
+              <label for="cdv-pesquiso-concorrencia">Pesquiso concorrência</label>
+            </div>
+
+            <div class="alternative">
+              <input type="checkbox" name="como-define-valor" id="cdv-nao-sei-precificar-bem"
+                value="nao-sei-precificar-bem" />
+              <div class="fake-checkbox"></div>
+              <label for="cdv-nao-sei-precificar-bem">Não sei precificar bem</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 6 desta seção</p>
-            <h2>
-              Já se sentiu inseguro(a) ou desrespeitado(a) ao atender um cliente
-              novo (por não conhecer o local ou a pessoa)?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 6 desta seção</p>
+          <h2>
+            Com que frequência você tem dificuldade para receber o pagamento
+            combinado?
+          </h2>
+          <p class="question-observation">1 = nunca ... 5 = sempre</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="se-sentiu-desrespeitado"
-                  id="ssd-sim"
-                  value="sim"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="ssd-sim">Sim</label>
-              </div>
+          <div class="likert-scale">
+            <hr />
 
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="se-sentiu-desrespeitado"
-                  id="ssd-nao"
-                  value="nao"
-                />
-                <div class="fake-radio"></div>
-                <label for="ssd-nao">Não</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="se-sentiu-desrespeitado"
-                  id="ssd-as-vezes"
-                  value="as-vezes"
-                />
-                <div class="fake-radio"></div>
-                <label for="ssd-as-vezes">Às vezes</label>
-              </div>
+            <div class="scale-number">
+              <input type="radio" name="frequencia-de-inadimplencia" id="fdi-1" value="1" required /><label
+                for="fdi-1">1</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="frequencia-de-inadimplencia" id="fdi-2" value="2" /><label for="fdi-2">2</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="frequencia-de-inadimplencia" id="fdi-3" value="3" /><label for="fdi-3">3</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="frequencia-de-inadimplencia" id="fdi-4" value="4" /><label for="fdi-4">4</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="frequencia-de-inadimplencia" id="fdi-5" value="5" /><label for="fdi-5">5</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 5 de 6 desta seção</p>
-            <h2>
-              Descreva a situação mais difícil que já viveu com um cliente
-              (cancelamento, calote, maus-tratos, cobrança injusta etc.).
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 6 desta seção</p>
+          <h2>Quais formas de pagamento você mais recebe?</h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
 
-            <textarea
-              name="situacoes-mais-dificeis"
-              class="text-field"
-              placeholder="Esqueva aqui..."
-              required
-            ></textarea>
-          </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="checkbox" name="principais-formas-de-recebimento" id="pfdr-dinheiro" value="dinheiro"
+                required />
+              <div class="fake-checkbox"></div>
+              <label for="pfdr-dinheiro">Dinheiro</label>
+            </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 6 de 6 desta seção</p>
-            <h2>
-              Como você costuma resolver conflitos com clientes hoje (ex.:
-              cancelamento de última hora, reclamações)?
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+            <div class="alternative">
+              <input type="checkbox" name="principais-formas-de-recebimento" id="pfdr-pix" value="pix" />
+              <div class="fake-checkbox"></div>
+              <label for="pfdr-pix">Pix</label>
+            </div>
 
-            <textarea
-              name="como-resolve-conflitos"
-              class="text-field"
-              placeholder="Esqueva aqui..."
-              required
-            ></textarea>
-          </div>
-        </fieldset>
+            <div class="alternative">
+              <input type="checkbox" name="principais-formas-de-recebimento" id="pfdr-cartao" value="cartao" />
+              <div class="fake-checkbox"></div>
+              <label for="pfdr-cartao">Cartão</label>
+            </div>
 
-        <fieldset class="part-3">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 6 desta seção</p>
-            <h2>Como você define o valor que cobra pelo seu serviço?</h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
+            <div class="alternative">
+              <input type="checkbox" name="principais-formas-de-recebimento" id="pfdr-transferência-bancaria"
+                value="transferência-bancaria" />
+              <div class="fake-checkbox"></div>
+              <label for="pfdr-transferência-bancaria">Transferência bancária</label>
+            </div>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-define-valor"
-                  id="cdv-preco-de-tabela-propria"
-                  value="preco-de-tabela-propria"
-                  required
-                />
-                <div class="fake-checkbox"></div>
-                <label for="cdv-preco-de-tabela-propria"
-                  >Preço de tabela próprio</label
-                >
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-define-valor"
-                  id="cdv-combino-com-cliente-na-hora"
-                  value="combino-com-cliente-na-hora"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="cdv-combino-com-cliente-na-hora"
-                  >Combino com o cliente na hora</label
-                >
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-define-valor"
-                  id="cdv-sigo-referencia-da-região"
-                  value="sigo-referencia-da-regiao"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="cdv-sigo-referencia-da-região"
-                  >Sigo valores de referência da região</label
-                >
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-define-valor"
-                  id="cdv-pesquiso-concorrencia"
-                  value="pesquiso-concorrencia"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="cdv-pesquiso-concorrencia"
-                  >Pesquiso concorrência</label
-                >
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="como-define-valor"
-                  id="cdv-nao-sei-precificar-bem"
-                  value="nao-sei-precificar-bem"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="cdv-nao-sei-precificar-bem"
-                  >Não sei precificar bem</label
-                >
-              </div>
+            <div class="alternative">
+              <input type="checkbox" name="principais-formas-de-recebimento" id="pfdr-boleto" value="boleto" />
+              <div class="fake-checkbox"></div>
+              <label for="pfdr-boleto">Boleto</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 6 desta seção</p>
-            <h2>
-              Com que frequência você tem dificuldade para receber o pagamento
-              combinado?
-            </h2>
-            <p class="question-observation">1 = nunca ... 5 = sempre</p>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 6 desta seção</p>
+          <h2>
+            Você sente que tem dificuldade em cobrar um preço justo pelo seu
+            trabalho?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="likert-scale">
-              <hr />
-
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="frequencia-de-inadimplencia"
-                  id="fdi-1"
-                  value="1"
-                  required
-                /><label for="fdi-1">1</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="frequencia-de-inadimplencia"
-                  id="fdi-2"
-                  value="2"
-                /><label for="fdi-2">2</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="frequencia-de-inadimplencia"
-                  id="fdi-3"
-                  value="3"
-                /><label for="fdi-3">3</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="frequencia-de-inadimplencia"
-                  id="fdi-4"
-                  value="4"
-                /><label for="fdi-4">4</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="frequencia-de-inadimplencia"
-                  id="fdi-5"
-                  value="5"
-                /><label for="fdi-5">5</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="seguranca-em-precificar" id="sep-acha-dificil" value="acha-dificil" required />
+              <div class="fake-radio"></div>
+              <label for="sep-acha-dificil">Sim, sempre acho difícil</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="seguranca-em-precificar" id="sep-as-vezes" value="as-vezes" />
+              <div class="fake-radio"></div>
+              <label for="sep-as-vezes">Às vezes</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="seguranca-em-precificar" id="sep-tem-seguranca" value="tem-seguranca" />
+              <div class="fake-radio"></div>
+              <label for="sep-tem-seguranca">Não, tenho segurança para precificar</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 6 desta seção</p>
-            <h2>Quais formas de pagamento você mais recebe?</h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
+        <div class="question">
+          <p class="question-number">Pergunta 5 de 6 desta seção</p>
+          <h2>Sua renda mensal com o trabalho costuma ser:</h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="principais-formas-de-recebimento"
-                  id="pfdr-dinheiro"
-                  value="dinheiro"
-                  required
-                />
-                <div class="fake-checkbox"></div>
-                <label for="pfdr-dinheiro">Dinheiro</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="principais-formas-de-recebimento"
-                  id="pfdr-pix"
-                  value="pix"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="pfdr-pix">Pix</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="principais-formas-de-recebimento"
-                  id="pfdr-cartao"
-                  value="cartao"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="pfdr-cartao">Cartão</label>
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="principais-formas-de-recebimento"
-                  id="pfdr-transferência-bancaria"
-                  value="transferência-bancaria"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="pfdr-transferência-bancaria"
-                  >Transferência bancária</label
-                >
-              </div>
-
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="principais-formas-de-recebimento"
-                  id="pfdr-boleto"
-                  value="boleto"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="pfdr-boleto">Boleto</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="eslabilidade-de-renda" id="edr-muito-instavel" value="muito-instavel"
+                required />
+              <div class="fake-radio"></div>
+              <label for="edr-muito-instavel">Muito instável</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="eslabilidade-de-renda" id="edr-instavel" value="instavel" />
+              <div class="fake-radio"></div>
+              <label for="edr-instavel">Instável</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="eslabilidade-de-renda" id="edr-razoavelmente-estavel"
+                value="razoavelmente-estavel" />
+              <div class="fake-radio"></div>
+              <label for="edr-razoavelmente-estavel">Razoavelmente estável</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="eslabilidade-de-renda" id="edr-estavel" value="estavel" />
+              <div class="fake-radio"></div>
+              <label for="edr-estavel">Estável</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 6 desta seção</p>
-            <h2>
-              Você sente que tem dificuldade em cobrar um preço justo pelo seu
-              trabalho?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 6 de 6 desta seção</p>
+          <h2>
+            O que mais impacta negativamente sua renda mensal? Explique.
+          </h2>
+          <p class="question-observation">Escreva no champo de texto</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="seguranca-em-precificar"
-                  id="sep-acha-dificil"
-                  value="acha-dificil"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="sep-acha-dificil">Sim, sempre acho difícil</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="seguranca-em-precificar"
-                  id="sep-as-vezes"
-                  value="as-vezes"
-                />
-                <div class="fake-radio"></div>
-                <label for="sep-as-vezes">Às vezes</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="seguranca-em-precificar"
-                  id="sep-tem-seguranca"
-                  value="tem-seguranca"
-                />
-                <div class="fake-radio"></div>
-                <label for="sep-tem-seguranca"
-                  >Não, tenho segurança para precificar</label
-                >
-              </div>
+          <textarea name="maior-impacto-negativo-renda" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="part-4 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 5 desta seção</p>
+          <h2>
+            Você possui suas próprias ferramentas/equipamentos de trabalho?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="possui-ferramentas-trabalho" id="pft-completas" value="completas" required />
+              <div class="fake-radio"></div>
+              <label for="pft-completas">Sim, completas</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-ferramentas-trabalho" id="pft-parcialmente" value="parcialmente" />
+              <div class="fake-radio"></div>
+              <label for="pft-parcialmente">Sim, parcialmente</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-ferramentas-trabalho" id="pft-depende-do-cliente"
+                value="depende-do-cliente" />
+              <div class="fake-radio"></div>
+              <label for="pft-depende-do-cliente">Não, dependo do cliente</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 5 de 6 desta seção</p>
-            <h2>Sua renda mensal com o trabalho costuma ser:</h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 5</p>
+          <h2>
+            Já perdeu algum serviço por não ter uma ferramenta ou material
+            necessário no momento?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="eslabilidade-de-renda"
-                  id="edr-muito-instavel"
-                  value="muito-instavel"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="edr-muito-instavel">Muito instável</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="eslabilidade-de-renda"
-                  id="edr-instavel"
-                  value="instavel"
-                />
-                <div class="fake-radio"></div>
-                <label for="edr-instavel">Instável</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="eslabilidade-de-renda"
-                  id="edr-razoavelmente-estavel"
-                  value="razoavelmente-estavel"
-                />
-                <div class="fake-radio"></div>
-                <label for="edr-razoavelmente-estavel"
-                  >Razoavelmente estável</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="eslabilidade-de-renda"
-                  id="edr-estavel"
-                  value="estavel"
-                />
-                <div class="fake-radio"></div>
-                <label for="edr-estavel">Estável</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="perdeu-servico-por-faltar-ferramenta" id="pspff-sim" value="sim" required />
+              <div class="fake-radio"></div>
+              <label for="pspff-sim">Sim</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="perdeu-servico-por-faltar-ferramenta" id="pspff-nao" value="nao" />
+              <div class="fake-radio"></div>
+              <label for="pspff-nao">Não</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 6 de 6 desta seção</p>
-            <h2>
-              O que mais impacta negativamente sua renda mensal? Explique.
-            </h2>
-            <p class="question-observation">Escreva no champo de texto</p>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 5</p>
+          <h2>Como você costuma se deslocar até os locais de trabalho?</h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <textarea
-              name="maior-impacto-negativo-renda"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-        </fieldset>
-
-        <fieldset class="part-4">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 5 desta seção</p>
-            <h2>
-              Você possui suas próprias ferramentas/equipamentos de trabalho?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
-
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-ferramentas-trabalho"
-                  id="pft-completas"
-                  value="completas"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="pft-completas">Sim, completas</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-ferramentas-trabalho"
-                  id="pft-parcialmente"
-                  value="parcialmente"
-                />
-                <div class="fake-radio"></div>
-                <label for="pft-parcialmente">Sim, parcialmente</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-ferramentas-trabalho"
-                  id="pft-depende-do-cliente"
-                  value="depende-do-cliente"
-                />
-                <div class="fake-radio"></div>
-                <label for="pft-depende-do-cliente"
-                  >Não, dependo do cliente</label
-                >
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="como-costuma-se-deslocar" id="ccsd-a-pe" value="a-pe" required />
+              <div class="fake-radio"></div>
+              <label for="ccsd-a-pe">A pé</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="como-costuma-se-deslocar" id="ccsd-bicicleta" value="bicicleta" />
+              <div class="fake-radio"></div>
+              <label for="ccsd-bicicleta">Bicicleta</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="como-costuma-se-deslocar" id="ccsd-transporte-publico"
+                value="transporte-publico" />
+              <div class="fake-radio"></div>
+              <label for="ccsd-transporte-publico">Transporte público</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="como-costuma-se-deslocar" id="ccsd-carro-proprio" value="carro-proprio" />
+              <div class="fake-radio"></div>
+              <label for="ccsd-carro-proprio">Carro próprio</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="como-costuma-se-deslocar" id="ccsd-moto-propria" value="moto-propria" />
+              <div class="fake-radio"></div>
+              <label for="ccsd-moto-propria">Moto própria</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="como-costuma-se-deslocar" id="ccsd-aplicativo-de-transporte"
+                value="aplicativo-de-transporte" />
+              <div class="fake-radio"></div>
+              <label for="ccsd-aplicativo-de-transporte">Aplicativo de transporte</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 5</p>
-            <h2>
-              Já perdeu algum serviço por não ter uma ferramenta ou material
-              necessário no momento?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 5</p>
+          <h2>
+            O deslocamento até os clientes é um problema para você? Por quê?
+          </h2>
+          <p class="question-observation">Escreva no champo de texto</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="perdeu-servico-por-faltar-ferramenta"
-                  id="pspff-sim"
-                  value="sim"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="pspff-sim">Sim</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="perdeu-servico-por-faltar-ferramenta"
-                  id="pspff-nao"
-                  value="nao"
-                />
-                <div class="fake-radio"></div>
-                <label for="pspff-nao">Não</label>
-              </div>
+          <textarea name="problema-com-descolamento" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+
+        <div class="question">
+          <p class="question-number">Pergunta 5 de 5</p>
+          <h2>
+            Quanto tempo, em média, você gasta se deslocando por dia de
+            trabalho?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="tempo-medio-descolamento" id="tmd-menos-30-min" value="menos-30-min" required />
+              <div class="fake-radio"></div>
+              <label for="tmd-menos-30-min">Menos de 30 min</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="tempo-medio-descolamento" id="tmd-30-min-a-1-hora" value="30-min-a-1-hora" />
+              <div class="fake-radio"></div>
+              <label for="tmd-30-min-a-1-hora">30 min a 1h</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="tempo-medio-descolamento" id="tmd-1-a-2-horas" value="1-a-2-horas" />
+              <div class="fake-radio"></div>
+              <label for="tmd-1-a-2-horas">1h a 2h</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="tempo-medio-descolamento" id="tmd-mais-de-2-horas" value="mais-de-2-horas" />
+              <div class="fake-radio"></div>
+              <label for="tmd-mais-de-2-horas">Mais de 2h</label>
             </div>
           </div>
+        </div>
+      </fieldset>
 
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 5</p>
-            <h2>Como você costuma se deslocar até os locais de trabalho?</h2>
-            <p class="question-observation">Selecione uma opção</p>
+      <fieldset class="part-5 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 5 desta seção</p>
+          <h2>Você já se machucou ou passou mal durante um serviço?</h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="como-costuma-se-deslocar"
-                  id="ccsd-a-pe"
-                  value="a-pe"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="ccsd-a-pe">A pé</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="como-costuma-se-deslocar"
-                  id="ccsd-bicicleta"
-                  value="bicicleta"
-                />
-                <div class="fake-radio"></div>
-                <label for="ccsd-bicicleta">Bicicleta</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="como-costuma-se-deslocar"
-                  id="ccsd-transporte-publico"
-                  value="transporte-publico"
-                />
-                <div class="fake-radio"></div>
-                <label for="ccsd-transporte-publico">Transporte público</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="como-costuma-se-deslocar"
-                  id="ccsd-carro-proprio"
-                  value="carro-proprio"
-                />
-                <div class="fake-radio"></div>
-                <label for="ccsd-carro-proprio">Carro próprio</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="como-costuma-se-deslocar"
-                  id="ccsd-moto-propria"
-                  value="moto-propria"
-                />
-                <div class="fake-radio"></div>
-                <label for="ccsd-moto-propria">Moto própria</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="como-costuma-se-deslocar"
-                  id="ccsd-aplicativo-de-transporte"
-                  value="aplicativo-de-transporte"
-                />
-                <div class="fake-radio"></div>
-                <label for="ccsd-aplicativo-de-transporte"
-                  >Aplicativo de transporte</label
-                >
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="ja-se-machucou" id="jsm-sim" value="sim" required />
+              <div class="fake-radio"></div>
+              <label for="jsm-sim">Sim</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="ja-se-machucou" id="jsm-nao" value="nao" />
+              <div class="fake-radio"></div>
+              <label for="jsm-nao">Não</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 5</p>
-            <h2>
-              O deslocamento até os clientes é um problema para você? Por quê?
-            </h2>
-            <p class="question-observation">Escreva no champo de texto</p>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 5 desta seção</p>
+          <h2>
+            Você tem acesso a equipamentos de proteção individual (EPI) quando
+            o serviço exige (luvas, botas, óculos, etc.)?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <textarea
-              name="problema-com-descolamento"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-
-          <div class="question">
-            <p class="question-number">Pergunta 5 de 5</p>
-            <h2>
-              Quanto tempo, em média, você gasta se deslocando por dia de
-              trabalho?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
-
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-medio-descolamento"
-                  id="tmd-menos-30-min"
-                  value="menos-30-min"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="tmd-menos-30-min">Menos de 30 min</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-medio-descolamento"
-                  id="tmd-30-min-a-1-hora"
-                  value="30-min-a-1-hora"
-                />
-                <div class="fake-radio"></div>
-                <label for="tmd-30-min-a-1-hora">30 min a 1h</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-medio-descolamento"
-                  id="tmd-1-a-2-horas"
-                  value="1-a-2-horas"
-                />
-                <div class="fake-radio"></div>
-                <label for="tmd-1-a-2-horas">1h a 2h</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tempo-medio-descolamento"
-                  id="tmd-mais-de-2-horas"
-                  value="mais-de-2-horas"
-                />
-                <div class="fake-radio"></div>
-                <label for="tmd-mais-de-2-horas">Mais de 2h</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="possui-epi" id="pe-sempre" value="sempre" required />
+              <div class="fake-radio"></div>
+              <label for="pe-sempre">Sempre</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-epi" id="pe-as-vezes" value="as-vezes" />
+              <div class="fake-radio"></div>
+              <label for="pe-as-vezes">Às vezes</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-epi" id="pe-nunca" value="nunca" />
+              <div class="fake-radio"></div>
+              <label for="pe-nunca">nunca</label>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="part-5">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 5 desta seção</p>
-            <h2>Você já se machucou ou passou mal durante um serviço?</h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 5 desta seção</p>
+          <h2>
+            Você possui algum tipo de seguro (de vida, acidentes,
+            responsabilidade civil)?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="ja-se-machucou"
-                  id="jsm-sim"
-                  value="sim"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="jsm-sim">Sim</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="ja-se-machucou"
-                  id="jsm-nao"
-                  value="nao"
-                />
-                <div class="fake-radio"></div>
-                <label for="jsm-nao">Não</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="possui-seguro" id="ps-sim" value="sim" required />
+              <div class="fake-radio"></div>
+              <label for="ps-sim">Sim</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-seguro" id="ps-nao" value="nao" />
+              <div class="fake-radio"></div>
+              <label for="ps-nao">Não</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-seguro" id="ps-desconheco-isso" value="desconheco-isso" />
+              <div class="fake-radio"></div>
+              <label for="ps-desconheco-isso">Não sei o que é isso</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 5 desta seção</p>
-            <h2>
-              Você tem acesso a equipamentos de proteção individual (EPI) quando
-              o serviço exige (luvas, botas, óculos, etc.)?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 5 desta seção</p>
+          <h2>
+            O quanto você se sente seguro(a) fisicamente ao realizar seu
+            trabalho no dia a dia?
+          </h2>
+          <p class="question-observation">
+            1 = nada seguro ... 5 = totalmente seguro
+          </p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-epi"
-                  id="pe-sempre"
-                  value="sempre"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="pe-sempre">Sempre</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-epi"
-                  id="pe-as-vezes"
-                  value="as-vezes"
-                />
-                <div class="fake-radio"></div>
-                <label for="pe-as-vezes">Às vezes</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-epi"
-                  id="pe-nunca"
-                  value="nunca"
-                />
-                <div class="fake-radio"></div>
-                <label for="pe-nunca">nunca</label>
-              </div>
+          <div class="likert-scale">
+            <hr />
+            <div class="scale-number">
+              <input type="radio" name="nivel-seguranca" id="ns-1" value="1" required /><label for="ns-1">1</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="nivel-seguranca" id="ns-2" value="2" /><label for="ns-2">2</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="nivel-seguranca" id="ns-3" value="3" /><label for="ns-3">3</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="nivel-seguranca" id="ns-4" value="4" /><label for="ns-4">4</label>
+            </div>
+            <div class="scale-number">
+              <input type="radio" name="nivel-seguranca" id="ns-5" value="5" /><label for="ns-5">5</label>
             </div>
           </div>
+        </div>
 
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 5 desta seção</p>
-            <h2>
-              Você possui algum tipo de seguro (de vida, acidentes,
-              responsabilidade civil)?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        <div class="question">
+          <p class="question-number">Pergunta 5 de 5 desta seção</p>
+          <h2>
+            Relate alguma situação de risco ou insegurança que já viveu no
+            trabalho.
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-seguro"
-                  id="ps-sim"
-                  value="sim"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="ps-sim">Sim</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-seguro"
-                  id="ps-nao"
-                  value="nao"
-                />
-                <div class="fake-radio"></div>
-                <label for="ps-nao">Não</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-seguro"
-                  id="ps-desconheco-isso"
-                  value="desconheco-isso"
-                />
-                <div class="fake-radio"></div>
-                <label for="ps-desconheco-isso">Não sei o que é isso</label>
-              </div>
+          <textarea name="situacao-de-risco-vivida" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="part-6 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 4 desta seção</p>
+          <h2>
+            Você é MEI (Microempreendedor Individual) ou possui algum tipo de
+            formalização?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="tipo-trabalhador" id="tf-mei" value="mei" />
+              <div class="fake-radio"></div>
+              <label for="tf-mei">Sim, sou MEI</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="tipo-trabalhador" id="tf-outra-formalizacao" value="outra-formalizacao" />
+              <div class="fake-radio"></div>
+              <label for="tf-outra-formalizacao">Sim, outro tipo de formalização</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="tipo-trabalhador" id="tf-informal" value="informal" />
+              <div class="fake-radio"></div>
+              <label for="tf-informal">Não, trabalho informalmente</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="tipo-trabalhador" id="tf-desconheco-isso" value="desconheco-isso" />
+              <div class="fake-radio"></div>
+              <label for="tf-desconheco-isso">Não sei o que é isso</label>
             </div>
           </div>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 4 desta seção</p>
+          <h2>
+            Você emite algum tipo de recibo ou comprovante para seus clientes?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 5 desta seção</p>
-            <h2>
-              O quanto você se sente seguro(a) fisicamente ao realizar seu
-              trabalho no dia a dia?
-            </h2>
-            <p class="question-observation">
-              1 = nada seguro ... 5 = totalmente seguro
-            </p>
-
-            <div class="likert-scale">
-              <hr />
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="nivel-seguranca"
-                  id="ns-1"
-                  value="1"
-                  required
-                /><label for="ns-1">1</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="nivel-seguranca"
-                  id="ns-2"
-                  value="2"
-                /><label for="ns-2">2</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="nivel-seguranca"
-                  id="ns-3"
-                  value="3"
-                /><label for="ns-3">3</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="nivel-seguranca"
-                  id="ns-4"
-                  value="4"
-                /><label for="ns-4">4</label>
-              </div>
-              <div class="scale-number">
-                <input
-                  type="radio"
-                  name="nivel-seguranca"
-                  id="ns-5"
-                  value="5"
-                /><label for="ns-5">5</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="emite-recibo-pagamento" id="erp-sempre" value="sempre" />
+              <div class="fake-radio"></div>
+              <label for="erp-sempre">Sempre</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="emite-recibo-pagamento" id="erp-as-vezes" value="as-vezes" />
+              <div class="fake-radio"></div>
+              <label for="erp-as-vezes">Às vezes</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="emite-recibo-pagamento" id="erp-nunca" value="nunca" />
+              <div class="fake-radio"></div>
+              <label for="erp-nunca">Nunca</label>
             </div>
           </div>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 4 desta seção</p>
+          <h2>
+            Quais são suas maiores dificuldades relacionadas à parte
+            burocrática do trabalho (impostos, MEI, notas fiscais, etc.)?
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-          <div class="question">
-            <p class="question-number">Pergunta 5 de 5 desta seção</p>
-            <h2>
-              Relate alguma situação de risco ou insegurança que já viveu no
-              trabalho.
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+          <textarea name="maiores-dificultades-burocraticas" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 4 desta seção</p>
+          <h2>
+            Você tem acesso a benefícios como aposentadoria, INSS ou algum
+            tipo de previdência?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <textarea
-              name="situacao-de-risco-vivida"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-        </fieldset>
-
-        <fieldset class="part-6">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 4 desta seção</p>
-            <h2>
-              Você é MEI (Microempreendedor Individual) ou possui algum tipo de
-              formalização?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
-
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tipo-trabalhador"
-                  id="tf-mei"
-                  value="mei"
-                />
-                <div class="fake-radio"></div>
-                <label for="tf-mei">Sim, sou MEI</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tipo-trabalhador"
-                  id="tf-outra-formalizacao"
-                  value="outra-formalizacao"
-                />
-                <div class="fake-radio"></div>
-                <label for="tf-outra-formalizacao"
-                  >Sim, outro tipo de formalização</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tipo-trabalhador"
-                  id="tf-informal"
-                  value="informal"
-                />
-                <div class="fake-radio"></div>
-                <label for="tf-informal">Não, trabalho informalmente</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="tipo-trabalhador"
-                  id="tf-desconheco-isso"
-                  value="desconheco-isso"
-                />
-                <div class="fake-radio"></div>
-                <label for="tf-desconheco-isso">Não sei o que é isso</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="possui-beneficios-ou-previdencia" id="pbop-contribui-regularmente"
+                value="contribui-regularmente" required />
+              <div class="fake-radio"></div>
+              <label for="pbop-contribui-regularmente">Sim, contribuo regularmente</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-beneficios-ou-previdencia" id="pbop-contribui-as-vezes"
+                value="contribui-as-vezes" />
+              <div class="fake-radio"></div>
+              <label for="pbop-contribui-as-vezes">Contribuo às vezes</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-beneficios-ou-previdencia" id="pbop-nao-contribuo"
+                value="nao-contribuo" />
+              <div class="fake-radio"></div>
+              <label for="pbop-nao-contribuo">Não contribuo</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="possui-beneficios-ou-previdencia" id="pbop-desconheco-isso"
+                value="desconheco-isso" />
+              <div class="fake-radio"></div>
+              <label for="pbop-desconheco-isso">Não sei como funciona</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 4 desta seção</p>
-            <h2>
-              Você emite algum tipo de recibo ou comprovante para seus clientes?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+        </div>
+      </fieldset>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="emite-recibo-pagamento"
-                  id="erp-sempre"
-                  value="sempre"
-                />
-                <div class="fake-radio"></div>
-                <label for="erp-sempre">Sempre</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="emite-recibo-pagamento"
-                  id="erp-as-vezes"
-                  value="as-vezes"
-                />
-                <div class="fake-radio"></div>
-                <label for="erp-as-vezes">Às vezes</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="emite-recibo-pagamento"
-                  id="erp-nunca"
-                  value="nunca"
-                />
-                <div class="fake-radio"></div>
-                <label for="erp-nunca">Nunca</label>
-              </div>
+      <fieldset class="part-7 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 4 desta seção</p>
+          <h2>
+            Você já usou algum aplicativo para conseguir clientes ou organizar
+            seu trabalho?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="ja-usou-app-especializado" id="juae-sim-uso-atualmente"
+                value="sim-uso-atualmente" required />
+              <div class="fake-radio"></div>
+              <label for="juae-sim-uso-atualmente">Sim, uso atualmente</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="ja-usou-app-especializado" id="juae-ja-useu-mas-parei"
+                value="ja-useu-mas-parei" />
+              <div class="fake-radio"></div>
+              <label for="juae-ja-useu-mas-parei">Já usei, mas parei</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="ja-usou-app-especializado" id="juae-nunca-usei" value="nunca-usei" />
+              <div class="fake-radio"></div>
+              <label for="juae-nunca-usei">Nunca usei</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 4 desta seção</p>
-            <h2>
-              Quais são suas maiores dificuldades relacionadas à parte
-              burocrática do trabalho (impostos, MEI, notas fiscais, etc.)?
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 4 desta seção</p>
+          <h2>
+            Se já usou, quais foram as maiores dificuldades ao usar esse tipo
+            de aplicativo?
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-            <textarea
-              name="maiores-dificultades-burocraticas"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 4 desta seção</p>
-            <h2>
-              Você tem acesso a benefícios como aposentadoria, INSS ou algum
-              tipo de previdência?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+          <textarea name="maiores-dificuldades-no-app" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 4 desta seção</p>
+          <h2>
+            O que você gostaria que um aplicativo feito para você resolvesse
+            de verdade?
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-beneficios-ou-previdencia"
-                  id="pbop-contribui-regularmente"
-                  value="contribui-regularmente"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="pbop-contribui-regularmente"
-                  >Sim, contribuo regularmente</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-beneficios-ou-previdencia"
-                  id="pbop-contribui-as-vezes"
-                  value="contribui-as-vezes"
-                />
-                <div class="fake-radio"></div>
-                <label for="pbop-contribui-as-vezes">Contribuo às vezes</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-beneficios-ou-previdencia"
-                  id="pbop-nao-contribuo"
-                  value="nao-contribuo"
-                />
-                <div class="fake-radio"></div>
-                <label for="pbop-nao-contribuo">Não contribuo</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="possui-beneficios-ou-previdencia"
-                  id="pbop-desconheco-isso"
-                  value="desconheco-isso"
-                />
-                <div class="fake-radio"></div>
-                <label for="pbop-desconheco-isso">Não sei como funciona</label>
-              </div>
+          <textarea name="minha-necessidade-no-aplicativo" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 4 de 4 desta seção</p>
+          <h2>
+            Você teria interesse em usar um app que ajudasse a organizar
+            agenda, pagamentos e avaliações de clientes?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
+
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="interesse-pelo-app" id="ipa-sim" value="sim" />
+              <div class="fake-radio"></div>
+              <label for="ipa-sim">Sim, com certeza</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="interesse-pelo-app" id="ipa-talvez" value="talvez" />
+              <div class="fake-radio"></div>
+              <label for="ipa-talvez">Talvez</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="interesse-pelo-app" id="ipa-nao" value="nao" />
+              <div class="fake-radio"></div>
+              <label for="ipa-nao">Não teria interesse</label>
             </div>
           </div>
-        </fieldset>
+        </div>
+      </fieldset>
 
-        <fieldset class="part-7">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 4 desta seção</p>
-            <h2>
-              Você já usou algum aplicativo para conseguir clientes ou organizar
-              seu trabalho?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+      <fieldset class="part-8 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 2 desta seção</p>
+          <h2>
+            Você sente falta de cursos ou treinamentos para melhorar seu
+            trabalho?
+          </h2>
+          <p class="question-observation">Selecione uma opção</p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="ja-usou-app-especializado"
-                  id="juae-sim-uso-atualmente"
-                  value="sim-uso-atualmente"
-                  required
-                />
-                <div class="fake-radio"></div>
-                <label for="juae-sim-uso-atualmente">Sim, uso atualmente</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="ja-usou-app-especializado"
-                  id="juae-ja-useu-mas-parei"
-                  value="ja-useu-mas-parei"
-                />
-                <div class="fake-radio"></div>
-                <label for="juae-ja-useu-mas-parei">Já usei, mas parei</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="ja-usou-app-especializado"
-                  id="juae-nunca-usei"
-                  value="nunca-usei"
-                />
-                <div class="fake-radio"></div>
-                <label for="juae-nunca-usei">Nunca usei</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="radio" name="falta-treinamento" id="ft-sim" value="sim" />
+              <div class="fake-radio"></div>
+              <label for="ft-sim">Sim</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="falta-treinamento" id="ft-nao" value="nao" />
+              <div class="fake-radio"></div>
+              <label for="ft-nao">Não</label>
+            </div>
+            <div class="alternative">
+              <input type="radio" name="falta-treinamento" id="ft-fiz-alguns-mas-gostaria-de-mais"
+                value="fiz-alguns-mas-gostaria-de-mais" />
+              <div class="fake-radio"></div>
+              <label for="ft-fiz-alguns-mas-gostaria-de-mais">Já fiz alguns, mas gostaria de mais</label>
             </div>
           </div>
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 4 desta seção</p>
-            <h2>
-              Se já usou, quais foram as maiores dificuldades ao usar esse tipo
-              de aplicativo?
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 2 desta seção</p>
+          <h2>
+            O que mais atrapalha você a crescer profissionalmente hoje (falta
+            de tempo, dinheiro, informação, etc.)?
+          </h2>
+          <p class="question-observation">Escreva no campo de texto</p>
 
-            <textarea
-              name="maiores-dificuldades-no-app"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 4 desta seção</p>
-            <h2>
-              O que você gostaria que um aplicativo feito para você resolvesse
-              de verdade?
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+          <textarea name="maior-problema-hoje" class="text-field" placeholder="Escreva aqui..." required></textarea>
+        </div>
+      </fieldset>
 
-            <textarea
-              name="minha-necessidade-no-aplicativo"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-          <div class="question">
-            <p class="question-number">Pergunta 4 de 4 desta seção</p>
-            <h2>
-              Você teria interesse em usar um app que ajudasse a organizar
-              agenda, pagamentos e avaliações de clientes?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+      <fieldset class="part-9 hidden-fieldset">
+        <div class="question">
+          <p class="question-number">Pergunta 1 de 3 desta seção</p>
+          <h2>
+            Dos temas abaixo, marque os 3 que mais impactam negativamente seu
+            dia a dia:
+          </h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="interesse-pelo-app"
-                  id="ipa-sim"
-                  value="sim"
-                />
-                <div class="fake-radio"></div>
-                <label for="ipa-sim">Sim, com certeza</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="interesse-pelo-app"
-                  id="ipa-talvez"
-                  value="talvez"
-                />
-                <div class="fake-radio"></div>
-                <label for="ipa-talvez">Talvez</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="interesse-pelo-app"
-                  id="ipa-nao"
-                  value="nao"
-                />
-                <div class="fake-radio"></div>
-                <label for="ipa-nao">Não teria interesse</label>
-              </div>
+          <div class="alternatives">
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-falta-de-clientes"
+                value="falta-de-clientes" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-falta-de-clientes">Falta de clientes</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-calote-e-inadimplencia"
+                value="calote-e-inadimplencia" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-calote-e-inadimplencia">Calote e inadimplência</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-inseguranca-no-trajeto-local"
+                value="inseguranca-no-trajeto-local" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-inseguranca-no-trajeto-local">Insegurança no trajeto/local</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-falta-de-ferramentas"
+                value="falta-de-ferramentas" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-falta-de-ferramentas">Falta de ferramentas</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-burocracia-e-impostos"
+                value="burocracia-e-impostos" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-burocracia-e-impostos">Burocracia e impostos</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho"
+                id="innt-falta-de-valorizacao-do-trabalho" value="falta-de-valorizacao-do-trabalho" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-falta-de-valorizacao-do-trabalho">Falta de valorização do trabalho</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-concorrencia-desleal"
+                value="concorrencia-desleal" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-concorrencia-desleal">Concorrência desleal</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-falta-de-plano-de-saude-seguro"
+                value="falta-de-plano-de-saude-seguro" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-falta-de-plano-de-saude-seguro">Falta de plano de saúde ou seguro</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-instabilidade-de-renda"
+                value="instabilidade-de-renda" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-instabilidade-de-renda">Instabilidade de renda</label>
+            </div>
+            <div class="alternative">
+              <input type="checkbox" name="impactam-negativamente-no-trabalho" id="innt-dificuldade-com-tecnologia"
+                value="dificuldade-com-tecnologia" />
+              <div class="fake-checkbox"></div>
+              <label for="innt-dificuldade-com-tecnologia">Dificuldade com tecnologia/apps</label>
             </div>
           </div>
-        </fieldset>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 2 de 3 desta seção</p>
+          <h2>
+            Se você pudesse mudar UMA coisa na sua rotina de trabalho hoje, o
+            que seria?
+          </h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
 
-        <fieldset class="part-8">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 2 desta seção</p>
-            <h2>
-              Você sente falta de cursos ou treinamentos para melhorar seu
-              trabalho?
-            </h2>
-            <p class="question-observation">Selecione uma opção</p>
+          <textarea name="mudanca-na-rotina-desejada" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+        <div class="question">
+          <p class="question-number">Pergunta 3 de 3 desta seção</p>
+          <h2>
+            Há algo mais que você gostaria de contar sobre suas dificuldades
+            no dia a dia que não foi perguntado aqui?
+          </h2>
+          <p class="question-observation">
+            Selecione todas as opções que se aplicam
+          </p>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="falta-treinamento"
-                  id="ft-sim"
-                  value="sim"
-                />
-                <div class="fake-radio"></div>
-                <label for="ft-sim">Sim</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="falta-treinamento"
-                  id="ft-nao"
-                  value="nao"
-                />
-                <div class="fake-radio"></div>
-                <label for="ft-nao">Não</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="radio"
-                  name="falta-treinamento"
-                  id="ft-fiz-alguns-mas-gostaria-de-mais"
-                  value="fiz-alguns-mas-gostaria-de-mais"
-                />
-                <div class="fake-radio"></div>
-                <label for="ft-fiz-alguns-mas-gostaria-de-mais"
-                  >Já fiz alguns, mas gostaria de mais</label
-                >
-              </div>
-            </div>
-          </div>
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 2 desta seção</p>
-            <h2>
-              O que mais atrapalha você a crescer profissionalmente hoje (falta
-              de tempo, dinheiro, informação, etc.)?
-            </h2>
-            <p class="question-observation">Escreva no campo de texto</p>
+          <textarea name="outras-dificuldades-entrentadas" class="text-field" placeholder="Escreva aqui..."
+            required></textarea>
+        </div>
+      </fieldset>
 
-            <textarea
-              name="maior-problema-hoje"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-        </fieldset>
+      <hr />
 
-        <fieldset class="part-9">
-          <div class="question">
-            <p class="question-number">Pergunta 1 de 3 desta seção</p>
-            <h2>
-              Dos temas abaixo, marque os 3 que mais impactam negativamente seu
-              dia a dia:
-            </h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
+      <input type="button" value="Continuar" class="continue-button" disabled />
+    </form>
+  </main>
 
-            <div class="alternatives">
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-falta-de-clientes"
-                  value="falta-de-clientes"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-falta-de-clientes">Falta de clientes</label>
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-calote-e-inadimplencia"
-                  value="calote-e-inadimplencia"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-calote-e-inadimplencia"
-                  >Calote e inadimplência</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-inseguranca-no-trajeto-local"
-                  value="inseguranca-no-trajeto-local"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-inseguranca-no-trajeto-local"
-                  >Insegurança no trajeto/local</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-falta-de-ferramentas"
-                  value="falta-de-ferramentas"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-falta-de-ferramentas"
-                  >Falta de ferramentas</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-burocracia-e-impostos"
-                  value="burocracia-e-impostos"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-burocracia-e-impostos"
-                  >Burocracia e impostos</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-falta-de-valorizacao-do-trabalho"
-                  value="falta-de-valorizacao-do-trabalho"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-falta-de-valorizacao-do-trabalho"
-                  >Falta de valorização do trabalho</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-concorrencia-desleal"
-                  value="concorrencia-desleal"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-concorrencia-desleal"
-                  >Concorrência desleal</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-falta-de-plano-de-saude-seguro"
-                  value="falta-de-plano-de-saude-seguro"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-falta-de-plano-de-saude-seguro"
-                  >Falta de plano de saúde ou seguro</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-instabilidade-de-renda"
-                  value="instabilidade-de-renda"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-instabilidade-de-renda"
-                  >Instabilidade de renda</label
-                >
-              </div>
-              <div class="alternative">
-                <input
-                  type="checkbox"
-                  name="impactam-negativamente-no-trabalho"
-                  id="innt-dificuldade-com-tecnologia"
-                  value="dificuldade-com-tecnologia"
-                />
-                <div class="fake-checkbox"></div>
-                <label for="innt-dificuldade-com-tecnologia"
-                  >Dificuldade com tecnologia/apps</label
-                >
-              </div>
-            </div>
-          </div>
-          <div class="question">
-            <p class="question-number">Pergunta 2 de 3 desta seção</p>
-            <h2>
-              Se você pudesse mudar UMA coisa na sua rotina de trabalho hoje, o
-              que seria?
-            </h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
+  <script src="assets/scripts/script.js"></script>
+</body>
 
-            <textarea
-              name="mudanca-na-rotina-desejada"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-          <div class="question">
-            <p class="question-number">Pergunta 3 de 3 desta seção</p>
-            <h2>
-              Há algo mais que você gostaria de contar sobre suas dificuldades
-              no dia a dia que não foi perguntado aqui?
-            </h2>
-            <p class="question-observation">
-              Selecione todas as opções que se aplicam
-            </p>
-
-            <textarea
-              name="outras-dificuldades-entrentadas"
-              class="text-field"
-              placeholder="Escreva aqui..."
-              required
-            ></textarea>
-          </div>
-        </fieldset>
-
-        <hr />
-
-        <input
-          type="button"
-          value="Continuar"
-          class="continue-button"
-          disabled
-        />
-      </form>
-    </main>
-  </body>
 </html>
