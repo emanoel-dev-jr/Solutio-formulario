@@ -264,6 +264,7 @@ main .continue-button {
     }
 
     main form {
+        width: 100%;
         max-width: calc(100% - 225px);
         height: 100dvh;
 
