@@ -68,6 +68,8 @@ main .question :where(.alternative, .scale-number) {
 }
 
 main .question .alternative {
+    position: relative;
+
     display: flex;
     align-items: center;
     gap: 10px;
@@ -122,8 +124,16 @@ main .question .alternative input[type="checkbox"]:checked+.fake-checkbox {
 }
 
 main .question .alternative label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
     width: calc(100% - 16px);
     height: 100%;
+
+    /* Acrescenta o espaço do .fake-radio, 10px de padding-inline e 21px de width */
+    padding-left: calc(21px + 2 * 10px);
 
     line-height: 45px;
 }
