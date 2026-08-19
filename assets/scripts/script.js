@@ -1,4 +1,5 @@
 const secoesLabels = document.querySelectorAll("input[name='secoes'] + label");
+const formContainer = document.querySelector(".form");
 const formulario = document.querySelector("form");
 const continueButton = document.querySelector(".continue-button");
 let currentSecao = 1;
@@ -64,19 +65,21 @@ continueButton.addEventListener("mousedown", () => {
         continueButton.innerText = "Enviar";
         continueButton.style.backgroundColor = "var(--terciary-color)";
     } else if (currentSecao == 9) {
-        const camposInvalidos = formulario.querySelectorAll(":invalid");
+        const invalidQuestions = formulario.querySelectorAll("fieldset .question:has(input:invalid)");
 
-        if (camposInvalidos.length > 0) {
-            const campo = camposInvalidos[0];
-            const fieldset = campo.closest("fieldset");
-            const secaoInvalida = fieldset.className.match(/part-(\d+)/)[1];
+        if (invalidQuestions.length > 0) {
+            const firstInvalidQuestion = invalidQuestions[0];
+            console.log(firstInvalidQuestion)
 
-            currentSecao = Number(secaoInvalida);
+            const fieldset = firstInvalidQuestion.closest("fieldset");
+            const invalidSecao = fieldset.className.match(/part-(\d+)/)[1];
+
+            currentSecao = +invalidSecao;
             document.getElementById(`for-secao-${currentSecao}`).click();
 
-            requestAnimationFrame(() => {
-                campo.focus();
-                campo.reportValidity();
+            formContainer.scrollTo({
+                top: firstInvalidQuestion.offsetTop,
+                behavior: "smooth"
             });
 
             return;
