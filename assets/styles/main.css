@@ -10,6 +10,42 @@ main fieldset {
     border: none;
 }
 
+main:has(.navigation-part li input[id="secao-1"]:checked) form fieldset.part-1 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-2"]:checked) form fieldset.part-2 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-3"]:checked) form fieldset.part-3 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-4"]:checked) form fieldset.part-4 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-5"]:checked) form fieldset.part-5 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-6"]:checked) form fieldset.part-6 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-7"]:checked) form fieldset.part-7 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-8"]:checked) form fieldset.part-8 {
+    display: block;
+}
+
+main:has(.navigation-part li input[id="secao-9"]:checked) form fieldset.part-9 {
+    display: block;
+}
+
 main .question {
     border: none;
     margin: 32px 15px;
@@ -127,7 +163,7 @@ main .question .alternative label {
     position: absolute;
     top: 0;
     left: 0;
-    
+
 
     width: calc(100% - 16px);
     height: 100%;
@@ -148,10 +184,9 @@ main .question .scale-number label {
 }
 
 main .question .numeric-input {
-    display: grid;
-    grid-template-columns: 90px, 80px;
-    grid-template-rows: repeat(2, 40px);
-    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .question .numeric-input input {
@@ -163,10 +198,6 @@ main .question .numeric-input input {
 }
 
 main .question .numeric-input input[type="number"] {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    justify-self: right;
-
     width: 90px;
     height: 90px;
     text-align: center;
@@ -174,22 +205,6 @@ main .question .numeric-input input[type="number"] {
 
 main .question .numeric-input input[type="number"]::placeholder {
     text-align: center;
-}
-
-main .question .numeric-input input[type="button"] {
-    justify-self: left;
-
-    width: 80px;
-    height: 40px;
-
-}
-
-main .question .numeric-input input[type="button"][value="+"] {
-    grid-column: 2 / 3;
-}
-
-main .question .numeric-input input[type="button"][value="-"] {
-    grid-column: 2 / 3;
 }
 
 main .question .text-field {
@@ -214,11 +229,15 @@ main .continue-button {
     border-radius: 10px;
 
     margin: 16px 32px;
+
+    transition: background-color 125ms;
 }
 
 @media screen and (min-width: 768px) {
     main {
         display: flex;
+
+        height: 100vh;
     }
 
     main .navigation-part {
@@ -250,35 +269,44 @@ main .continue-button {
         list-style: none;
     }
 
-    main .navigation-part button {
+    main .navigation-part li {
+        position: relative;
+
         font-size: 1rem;
 
         color: var(--white-color);
-        text-align: left;
 
-        background-color: var(--primary-color);
+        height: min-content;
+    }
+
+    main .navigation-part li input[type="radio"] {
+        display: none;
+    }
+
+    main .navigation-part li label {
+        display: inline-block;
+
         width: 100%;
-        min-height: 40px;
+        height: 100%;
 
-        padding: 16px 16px;
+        padding: 16px 20px;
 
-        border: none;
         border-left: solid 3px transparent;
 
         transition: background-color 125ms, border 125ms;
     }
 
-    main .navigation-part button.selected-part {
+    main .navigation-part li input[type="radio"]:checked+label {
         background-color: #FFFFFF10;
+
         border-left: solid 3px var(--secondary-color);
     }
 
-    main form {
-        width: 100%;
-        max-width: calc(100% - 225px);
-        height: 100dvh;
+    main .form {
+        width: calc(100% - 225px);
+        height: 100%;
 
-        overflow: auto;
+        overflow-y: auto;
     }
 
     main .question .alternative {
@@ -312,11 +340,11 @@ main .continue-button {
         cursor: pointer;
     }
 
-    main .navigation-part button:hover {
+    main .navigation-part li label:hover {
         border-left-color: var(--secondary-color);
     }
 
-    main .navigation-part button:active {
+    main .navigation-part li label:active {
         background-color: #FFFFFF20;
         border-left-color: var(--secondary-color);
 
@@ -338,4 +366,20 @@ main .continue-button {
     main .question .alternative:has(input[type="checkbox"]:checked):active {
         background-color: var(--white-color);
     }
+
+    main .question input[type="number"]::-webkit-outer-spin-button,
+    main .question input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    main .continue-button {
+        transition: filter 125ms;
+
+        cursor: pointer;
+    }
+
+    main .continue-button:not(:disabled):hover {
+        filter: brightness(120%);
+    }
+
 }

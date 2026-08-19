@@ -7,7 +7,7 @@
     --terciary-color: #B5502F;
 
     --background-color: #F5F2EC;
-    --hover-background-color: hsl(16, 30%, 94%);
+    --hover-background-color: #F4EEEB;
     --selected-background-color: #FBEAE4;
 
     --text-color: #000000;
@@ -28,6 +28,28 @@
     padding: 0;
     margin: 0;
     outline: none;
+}
+
+*::selection {
+    background-color: var(--suport-color);
+    color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--background-color);
+    width: 10px;
+
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+
+    cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
 }
 
 body {
